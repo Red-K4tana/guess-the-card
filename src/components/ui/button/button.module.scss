@@ -1,3 +1,19 @@
+.button {
+  all: unset;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 28px;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-info-300);
+  }
+}
+
 .primary {
   background-color: red;
 }
@@ -11,7 +27,7 @@
 }
 
 .link {
-  background-color: yellow;
+  background-color: #6843a9;
 }
 
 .fullWidth {

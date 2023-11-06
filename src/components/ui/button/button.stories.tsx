@@ -4,6 +4,9 @@ import { Button } from './'
 
 const meta = {
   argTypes: {
+    title: {
+      control: { type: 'text' },
+    },
     variant: {
       control: { type: 'radio' },
       options: ['primary', 'secondary', 'tertiary', 'link'],
@@ -11,7 +14,7 @@ const meta = {
   },
   component: Button,
   tags: ['autodocs'],
-  title: 'Components/Button',
+  title: 'Components/UI/Button',
 } satisfies Meta<typeof Button>
 
 export default meta
@@ -52,6 +55,15 @@ export const FullWidth: Story = {
     children: 'Full Width Button',
     disabled: false,
     fullWidth: true,
+    variant: 'primary',
+  },
+}
+
+export const AsLink: Story = {
+  args: {
+    as: 'a',
+    children: 'Link that looks like a button',
+    href: 'sdasds/dsadsa/dsads',
     variant: 'primary',
   },
 }
