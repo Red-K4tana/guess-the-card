@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { Button } from './'
 
@@ -24,6 +24,7 @@ export const Primary: Story = {
     variant: 'primary',
   },
 }
+
 export const Secondary: Story = {
   args: {
     children: 'Secondary Button',
