@@ -10,10 +10,10 @@ export function App() {
       >
         button as link
       </Button>
-      <Button as={'button'} className={'additionalClass'} variant={'secondary'}>
+      <Button as={'button'} variant={'secondary'}>
         button as button
       </Button>
-      <Button disabled fullWidth variant={'link'}>
+      <Button disabled fullWidth variant={'tertiary'}>
         variant link
       </Button>
     </div>
