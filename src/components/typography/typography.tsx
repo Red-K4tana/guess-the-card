@@ -14,8 +14,6 @@ const createTypographyComponent = <T extends ElementType>(
   return ({ children, className, component, ...rest }) => {
     const Component = component || COMPONENTS[basicClassName] || 'span'
 
-    console.log(Component)
-
     return (
       <Component className={className} {...rest}>
         {children}
@@ -25,25 +23,19 @@ const createTypographyComponent = <T extends ElementType>(
 }
 
 export const Typography = {
-  Body1: createTypographyComponent('body1'),
-  Body2: createTypographyComponent('body2'),
+  Body: createTypographyComponent('body'),
   Caption: createTypographyComponent('caption'),
   H1: createTypographyComponent('h1'),
+  H2: createTypographyComponent('h2'),
+  H3: createTypographyComponent('h3'),
+  Link: createTypographyComponent('link'),
 }
 
 const COMPONENTS = {
-  body1: 'p',
-  body2: 'p',
-  caption: 'span',
-  captionBold: 'caption',
-  captionLink: 'a',
-  error: 'span',
+  body: 'p',
+  caption: 'caption',
   h1: 'h1',
   h2: 'h2',
   h3: 'h3',
   link: 'a',
-  overline: 'p',
-  subtitle1: 'p',
-  subtitle2: 'p',
-  subtitleLink: 'span',
 } as const

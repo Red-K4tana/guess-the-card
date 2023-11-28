@@ -1,6 +1,8 @@
 import { Typography } from '@/components/typography/typography'
 import { Button } from '@/components/ui/button'
 
+import s from '@/components/typography/typography.module.scss'
+
 export function App() {
   return (
     <div>
@@ -17,7 +19,9 @@ export function App() {
       <Button disabled fullWidth variant={'tertiary'}>
         variant link
       </Button>
-      <Typography.Body1 component={'h1'}>{'Жили у бабуси 2 веселых гуся!'}</Typography.Body1>
+      <Typography.H1 className={s.h1}>{'Жили у бабуси 2 веселых гуся!'}</Typography.H1>
+      <Typography.H1>{'Один серый другой белый'}</Typography.H1>
+      <Typography.H1>{'2 веселых гуся'}</Typography.H1>
     </div>
   )
 }
