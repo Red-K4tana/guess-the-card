@@ -1,3 +1,4 @@
+import { Typography } from '@/components/typography/typography'
 import { Button } from '@/components/ui/button'
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
       <Button disabled fullWidth variant={'tertiary'}>
         variant link
       </Button>
+      <Typography.Body1 component={'h1'}>{'Жили у бабуси 2 веселых гуся!'}</Typography.Body1>
     </div>
   )
 }
