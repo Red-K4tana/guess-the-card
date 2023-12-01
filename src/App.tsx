@@ -19,7 +19,7 @@ export function App() {
       </Button>
       <Typography.H1>{'Жили у бабуси 2 веселых гуся!'}</Typography.H1>
       <Typography.Body>{'Один серый другой белый'}</Typography.Body>
-      <Typography.Link>{'2 веселых гуся'}</Typography.Link>
+      <Typography.H3>{'2 веселых гуся'}</Typography.H3>
     </div>
   )
 }

@@ -34,14 +34,13 @@ export const Typography = {
   H1: createTypographyComponent('h1'),
   H2: createTypographyComponent('h2'),
   H3: createTypographyComponent('h3'),
-  Link: createTypographyComponent('link'),
 }
 
 const COMPONENTS = {
   body: 'p',
   caption: 'caption',
+  error: 'span',
   h1: 'h1',
   h2: 'h2',
   h3: 'h3',
-  link: 'a',
 } as const
