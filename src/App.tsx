@@ -19,7 +19,9 @@ export function App() {
       </Button>
       <Typography.H1>{'Жили у бабуси 2 веселых гуся!'}</Typography.H1>
       <Typography.Body>{'Один серый другой белый'}</Typography.Body>
-      <Typography.H3>{'2 веселых гуся'}</Typography.H3>
+      <Typography.H3 color={'red'} style={{ fontSize: '50px' }}>
+        {'2 веселых гуся'}
+      </Typography.H3>
     </div>
   )
 }

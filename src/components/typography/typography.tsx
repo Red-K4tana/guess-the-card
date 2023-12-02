@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ElementType, FC, ReactNode } from 'react'
+import { CSSProperties, ComponentPropsWithoutRef, ElementType, FC, ReactNode } from 'react'
 
 import { clsx } from 'clsx'
 
@@ -7,6 +7,7 @@ import s from '@/components/typography/typography.module.scss'
 export type TypographyProps<T extends ElementType> = {
   children: ReactNode
   className?: string
+  color?: CSSProperties['color']
   component?: T
 } & ComponentPropsWithoutRef<T>
 
@@ -15,13 +16,19 @@ type Component = keyof typeof COMPONENTS
 const createTypographyComponent = <T extends ElementType>(
   basicClassName: Component
 ): FC<TypographyProps<T>> => {
-  return ({ children, className, component, ...rest }) => {
+  return ({ children, className, color, component, style, ...rest }) => {
     const Component = component || COMPONENTS[basicClassName] || 'span'
 
     const classNames = clsx(s[basicClassName], className)
+    const styles = {
+      ...(color && { color }),
+      ...style,
+    }
+
+    console.log('color ', styles.color)
 
     return (
-      <Component className={classNames} {...rest}>
+      <Component className={classNames} style={styles} {...rest}>
         {children}
       </Component>
     )
