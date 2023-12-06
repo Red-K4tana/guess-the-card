@@ -1,22 +1,20 @@
-import type { Meta } from '@storybook/react'
-
 import { Typography } from '@/components/typography/typography'
-import { StoryObj } from '@storybook/react'
+import { Meta } from '@storybook/react'
 
-const meta = {
-  argTypes: {
-    title: {
-      control: { type: 'text' },
-    },
-  },
+export default {
   component: Typography.Body,
-  tags: ['autodocs'],
   title: 'Components/UI/Typography',
-} satisfies Meta<typeof Typography>
+} satisfies Meta<typeof Typography.Body>
 
-export default meta
-type Story = StoryObj<typeof meta>
-
-export const Large: Story = {
-  render: () => <Typography.Body></Typography.Body>,
+export const AllTypography = {
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <Typography.Body>Base text (Body)</Typography.Body>
+      <Typography.Caption>Base text (Caption)</Typography.Caption>
+      <Typography.Error>Base text (Error)</Typography.Error>
+      <Typography.H1>Base text (H1)</Typography.H1>
+      <Typography.H2>Base text (H2)</Typography.H2>
+      <Typography.H3>Base text (H3)</Typography.H3>
+    </div>
+  ),
 }

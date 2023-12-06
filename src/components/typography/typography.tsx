@@ -25,8 +25,6 @@ const createTypographyComponent = <T extends ElementType>(
       ...style,
     }
 
-    console.log('color ', styles.color)
-
     return (
       <Component className={classNames} style={styles} {...rest}>
         {children}
@@ -38,6 +36,7 @@ const createTypographyComponent = <T extends ElementType>(
 export const Typography = {
   Body: createTypographyComponent('body'),
   Caption: createTypographyComponent('caption'),
+  Error: createTypographyComponent('error'),
   H1: createTypographyComponent('h1'),
   H2: createTypographyComponent('h2'),
   H3: createTypographyComponent('h3'),
