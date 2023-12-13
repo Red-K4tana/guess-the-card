@@ -18,3 +18,35 @@
 .h3 {
   @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-bold));
 }
+
+.large {
+  @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
+}
+
+.body1 {
+  @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-regular));
+}
+
+.body2 {
+  @include typography(var(--font-size-m), var(--font-size-s), var(--font-weight-regular));
+}
+
+.subtitle1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+}
+
+.subtitle1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+}
+
+.caption {
+}
+
+.overline {
+}
+
+.link1 {
+}
+
+.link2 {
+}
