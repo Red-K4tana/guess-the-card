@@ -35,18 +35,22 @@
   @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
 }
 
-.subtitle1 {
+.subtitle2 {
   @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
 }
 
 .caption {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-regular));
 }
 
 .overline {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-bold));
 }
 
 .link1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-regular));
 }
 
 .link2 {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-regular));
 }
