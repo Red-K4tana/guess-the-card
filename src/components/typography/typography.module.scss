@@ -28,11 +28,11 @@
 }
 
 .body2 {
-  @include typography(var(--font-size-m), var(--font-size-s), var(--font-weight-regular));
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-regular));
 }
 
 .subtitle1 {
-  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+  @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-bold));
 }
 
 .subtitle2 {
