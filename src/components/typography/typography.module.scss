@@ -18,3 +18,39 @@
 .h3 {
   @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-bold));
 }
+
+.large {
+  @include typography(var(--font-size-xxl), var(--line-height-l), var(--font-weight-bold));
+}
+
+.body1 {
+  @include typography(var(--font-size-m), var(--line-height-m), var(--font-weight-regular));
+}
+
+.body2 {
+  @include typography(var(--font-size-m), var(--font-size-s), var(--font-weight-regular));
+}
+
+.subtitle1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+}
+
+.subtitle2 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-bold));
+}
+
+.caption {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-regular));
+}
+
+.overline {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-bold));
+}
+
+.link1 {
+  @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-regular));
+}
+
+.link2 {
+  @include typography(var(--font-size-xs), var(--line-height-s), var(--font-weight-regular));
+}
